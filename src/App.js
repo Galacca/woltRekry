@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import initializeRestaurants from './actions/restaurantActions';
+import Restaurants from './components/Restaurants';
 import './App.css';
 
-function App() {
+
+const App = (props) => {
+  useEffect(() => {
+    props.initializeRestaurants();
+}, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Restaurants></Restaurants>
   );
 }
 
-export default App;
+export default connect(null, { initializeRestaurants })(App);
