@@ -6,8 +6,7 @@ Heroku is sometimes a bit sluggish too, so this should result in better performa
 */
 
 const fetchJsonData = () => {
-   // const stringifiedData = JSON.stringify(data)
-   return data// JSON.parse(stringifiedData)
+   return data
 };
 
 export default fetchJsonData
