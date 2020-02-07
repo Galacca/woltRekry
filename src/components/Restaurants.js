@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {Grid} from 'react-flexbox-grid'
+import Card from '../widgets/Card';
 
 const Restaurants = (props) => {
   return (
-    <ul>
-      {props.restaurants.map(r => r.name)}
-    </ul>
+    <Grid fluid>
+      <Card />
+    </Grid>
   );
 };
 
