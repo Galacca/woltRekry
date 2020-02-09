@@ -1,11 +1,11 @@
 import React from 'react';
 import '../css/Field.css';
 
-const Field = () => {
+const Field = (props) => {
     return (
         <div className="field">
-            <div className="label"> Label </div>
-            <div className="text"> Text </div>
+            <div className="label">{props.name} </div>
+            <div className="text">{props.description} </div>
         </div>
     )
 };

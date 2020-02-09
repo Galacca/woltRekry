@@ -1,14 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {Grid} from 'react-flexbox-grid'
-import Card from '../widgets/Card';
+import Card from '../components/Card';
 
 const Restaurants = (props) => {
-  return (
+   return (
+     props.restaurants.map((r) => {
+    return (
     <Grid fluid>
-      <Card />
+      <Card image = {r.image} name = {r.name} description = {r.description} />
     </Grid>
-  );
+    )}))
 };
 
 const mapStateToProps = (state) => ({
