@@ -1,7 +1,5 @@
 .hero {
-    background-color: #5a5a5a;
-    min-height: 120px;
-    max-height: 210px;
-    min-width: 120px;
-    max-width: 140px;
+    display:  block;
+    margin: auto;
+    width: 100%;
 }

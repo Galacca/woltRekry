@@ -5,12 +5,13 @@ import Card from '../components/Card';
 
 const Restaurants = (props) => {
    return (
-     props.restaurants.map((r) => {
-    return (
     <Grid fluid>
+     {props.restaurants.map((r) => {
+    return (
+    
       <Card image = {r.image} name = {r.name} description = {r.description} />
-    </Grid>
-    )}))
+    
+    )})}</Grid>)
 };
 
 const mapStateToProps = (state) => ({

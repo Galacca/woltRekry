@@ -9,8 +9,6 @@ const Card = (props) => {
         <Row center="xs" className="card">
             <Col xs={12} sm={4} lg={3}>
                 <Hero image = {props.image}/>
-            </Col>
-            <Col xs={12} sm={4} lg={3}>
                 <Field name = {props.name} description = {props.description}/>
             </Col>
         </Row>
