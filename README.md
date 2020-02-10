@@ -6,6 +6,9 @@ Scales for all screen resolutions
 Has the requested sorting functions
 No tests, sorry.
 
+The app has been deployed to:
+https://mhietala-wolt-rekry.herokuapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
