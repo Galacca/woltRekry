@@ -5,8 +5,6 @@ I preferred to have the data locally just in case something happens to github ho
 Heroku is sometimes a bit sluggish too, so this should result in better performance
 */
 
-const fetchJsonData = () => {
-   return data
-};
+const fetchJsonData = () => data;
 
-export default fetchJsonData
+export default fetchJsonData;

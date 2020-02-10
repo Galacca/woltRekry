@@ -1,0 +1,9 @@
+.navbar {
+    margin-bottom: 1em;
+    font-size: 1.125rem;
+    color: #3c3d40;
+}
+.navBarClickable {
+    display: inline;
+    cursor: pointer;
+}
